@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
-import 'custom_notes_item.dart';
+import 'custom_list_view_builder.dart';
 
 class NotesViewBody extends StatelessWidget{
   const NotesViewBody({super.key});
@@ -26,15 +26,4 @@ class NotesViewBody extends StatelessWidget{
 
 }
 
-class CustomListViewBuilder extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(itemBuilder: (context, index) {
-      return Padding(
-        padding: const EdgeInsets.only(bottom: 16),
-        child: CustomNoteItem(),
-      );
-    },);
-  }
-}
 
