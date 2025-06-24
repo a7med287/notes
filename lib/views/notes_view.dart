@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/views/widgets/notes_body.dart';
 
-class NotesView extends StatelessWidget{
+class NotesView extends StatelessWidget {
   const NotesView({super.key});
 
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-     body: NotesViewBody(),
-   );
+    return Scaffold(
+      body: NotesViewBody(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.blue,
+        child:  Icon(Icons.add),
+      ),
+    );
   }
-
 }
-
