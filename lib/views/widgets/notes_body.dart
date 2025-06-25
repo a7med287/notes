@@ -18,7 +18,7 @@ class NotesViewBody extends StatelessWidget{
           SizedBox(
             height: 20,
           ),
-          Expanded(child: CustomListViewBuilder())
+          Expanded(child: const CustomListViewBuilder())
         ],
       ),
     );
