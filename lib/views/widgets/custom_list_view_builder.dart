@@ -12,9 +12,10 @@ class CustomListViewBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<NoteModel> notsList = BlocProvider.of<NoteCubit>(context).notesList?? [];
+
     return BlocBuilder<NoteCubit,NoteCubitState>(
       builder: (BuildContext context, state) {
+        List<NoteModel> notsList = BlocProvider.of<NoteCubit>(context).notesList?? [];
         return ListView.builder(
           itemCount: notsList.length,
           padding: EdgeInsets.zero,

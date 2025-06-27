@@ -6,14 +6,7 @@ abstract class NoteCubitState{}
 
 class NoteInitial extends NoteCubitState{}
 class NoteSuccess extends NoteCubitState{
+   final List<NoteModel> notes;
 
-   final List<NoteModel> noteModel;
-  NoteSuccess({required this.noteModel});
+  NoteSuccess({required this.notes});
 }
-
-class NoteFailure extends NoteCubitState{
- final String errorMessage;
-
-  NoteFailure({required this.errorMessage});
-}
-
