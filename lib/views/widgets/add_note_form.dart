@@ -19,8 +19,13 @@ class _AddNoteFormState extends State<AddNoteForm> {
   GlobalKey<FormState> formKey = GlobalKey();
 
   String? title, subTitle;
+
+
   @override
   Widget build(BuildContext context) {
+    DateTime dateTimeNow = DateTime.now();
+    String formattedTimeNow = "${dateTimeNow.year}-${dateTimeNow.month.toString().padLeft(2, '0')}-${dateTimeNow.day.toString().padLeft(2, '0')}";
+
     return Form(
       key: formKey,
       autovalidateMode: autovalidateMode,
@@ -52,8 +57,8 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     NoteModel note = NoteModel(
                       title: title!,
                       subTitle: subTitle!,
-                      date: DateTime.now().toString(),
-                      color: Color(0xffffcc80).toARGB32(),
+                      date: formattedTimeNow ,
+                      color: Color(0xffc3c180).toARGB32(),
                     );
                     BlocProvider.of<AddNoteCubit>(context).addNote(note);
                   } else {
