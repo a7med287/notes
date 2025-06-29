@@ -54,18 +54,6 @@ class NoteModel {
 
 ---
 
-## 📂 Note Data Model
-
-```dart
-class NoteModel {
-  final String title;
-  final String content;
-  final int color;
-  final DateTime date;
-}
-
----
-
 ## Getting Started
 
 Clone the repository and run the app:
