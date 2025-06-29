@@ -9,7 +9,7 @@ It allows users to add, edit, and delete notes, with local storage using **Hive*
 
 | Home Screen | Add Note | Edit Note |
 |-------------|----------|------------|
-| ![Home](assets/screenshots/home.png) | ![Add](assets/screenshots/add_note.png) | ![Edit](assets/screenshots/edit_note.png) |
+| ![Home](assets/screenshots/home.png) | ![Add](assets/screenshots/add.png) | ![Edit](assets/screenshots/edit.png) |
 
 > Make sure to place your screenshots inside the folder: `assets/screenshots/`
 
