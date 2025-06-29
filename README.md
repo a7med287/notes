@@ -32,7 +32,7 @@ class NoteModel {
   final String content;
   final int color;
   final DateTime date;
-}
+}````
 
 ---
 
