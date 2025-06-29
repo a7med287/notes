@@ -24,6 +24,18 @@ It allows users to add, edit, and delete notes, with local storage using **Hive*
 
 ---
 
+## 📂 Note Data Model
+
+```dart
+class NoteModel {
+  final String title;
+  final String content;
+  final int color;
+  final DateTime date;
+}
+
+---
+
 ## 🛠️ Built With
 
 - [Flutter](https://flutter.dev )
