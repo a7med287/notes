@@ -42,20 +42,3 @@ class NoteModel {
   final int color;
   final DateTime date;
 }
-🚀 Getting Started
-Clone the repository and run the app:
-bash
-git clone https://github.com/a7med287/notes.git
-cd notes
-flutter pub get
-flutter run
-🤝 Contributing
-Contributions are welcome!
-Fork the repo
-Create a new branch: feature/your-feature-name
-Make your changes
-Push and create a Pull Request
-Contact
-Email: rezk7672@gmail.com
-LinkedIn: Ahmed Rezk
-GitHub: @a7med287
