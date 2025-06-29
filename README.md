@@ -33,34 +33,6 @@ It allows users to add, edit, and delete notes, with local storage using **Hive*
 
 ---
 
-## 📸 Screenshots
-
-| Home Screen | Add Note | Edit Note |
-|-------------|----------|------------|
-| ![Home](assets/screenshots/home.png) | ![Add](assets/screenshots/add.png) | ![Edit](assets/screenshots/edit.png) |
-
----
-
-## 🚀 Features
-
-- 📝 Add a title and content to each note
-- 🎨 Choose a custom color for each note
-- ✏️ Edit existing notes (title, content, color)
-- 🗑️ Delete notes with a single tap
-- 📦 Local data storage using Hive
-- ⚙️ Lightweight state management with Cubit (Bloc)
-
----
-
-## 🛠️ Built With
-
-- [Flutter](https://flutter.dev )
-- [Dart](https://dart.dev )
-- [Hive](https://docs.hivedb.dev ) (for local storage)
-- [Bloc/Cubit](https://bloclibrary.dev )
-
----
-
 ## 📂 Note Data Model
 
 ```dart
