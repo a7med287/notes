@@ -7,12 +7,9 @@ It allows users to add, edit, and delete notes, with local storage using **Hive*
 
 ## 📸 Screenshots
 
-<!-- Uncomment and add screenshots here when available -->
-<!-- 
 | Home Screen | Add Note | Edit Note |
 |-------------|----------|------------|
 | ![Home](assets/screenshots/home.png) | ![Add](assets/screenshots/add.png) | ![Edit](assets/screenshots/edit.png) |
--->
 
 ---
 
@@ -52,6 +49,8 @@ cd notes
 flutter pub get
 flutter run
 
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome!
@@ -63,6 +62,8 @@ Create a new branch: feature/your-feature-name
 Make your changes
 
 Push and create a Pull Request
+
+---
 
 ## Contact
 
