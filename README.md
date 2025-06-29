@@ -53,6 +53,14 @@ Contributions are welcome!
 
 ---
 
+## 📬 Contact
+
+- 📧 Email: rezk7672@gmail.com
+- 💼 LinkedIn: [Ahmed Rezk](https://www.linkedin.com/in/ahmed-rezk-966985322/)
+- 💻 GitHub: [@a7med287](https://github.com/a7med287)
+
+---
+
 ## 📂 Note Data Model
 
 ```dart
