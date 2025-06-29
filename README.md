@@ -33,6 +33,14 @@ It allows users to add, edit, and delete notes, with local storage using **Hive*
 
 ---
 
+## 🚀 Getting Started
+
+To run this project on your local machine:
+- git clone https://github.com/a7med287/notes.git
+- cd notes
+- flutter pub get
+- flutter run
+
 ## 📂 Note Data Model
 
 ```dart
