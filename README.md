@@ -26,10 +26,10 @@ It allows users to add, edit, and delete notes, with local storage using **Hive*
 
 ## 🛠️ Built With
 
-- [Flutter](https://flutter.dev)
-- [Dart](https://dart.dev)
-- [Hive](https://docs.hivedb.dev) (for local storage)
-- [Bloc/Cubit](https://bloclibrary.dev)
+- [Flutter](https://flutter.dev )
+- [Dart](https://dart.dev )
+- [Hive](https://docs.hivedb.dev ) (for local storage)
+- [Bloc/Cubit](https://bloclibrary.dev )
 
 ---
 
@@ -42,37 +42,20 @@ class NoteModel {
   final int color;
   final DateTime date;
 }
-
----
-
-## 🚀 Getting Started
-
+🚀 Getting Started
 Clone the repository and run the app:
-
-```bash
+bash
 git clone https://github.com/a7med287/notes.git
 cd notes
 flutter pub get
 flutter run
-
----
-
-# 🤝 Contributing
-
+🤝 Contributing
 Contributions are welcome!
-
 Fork the repo
-
 Create a new branch: feature/your-feature-name
-
 Make your changes
-
 Push and create a Pull Request
-
----
-
-# Contact
-
+Contact
 Email: rezk7672@gmail.com
-LinkedIn: [Ahmed Rezk](https://www.linkedin.com/in/ahmed-rezk-966985322/)
-GitHub:[ @a7med287](https://github.com/a7med287)
+LinkedIn: Ahmed Rezk
+GitHub: @a7med287
