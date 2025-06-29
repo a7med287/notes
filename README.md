@@ -41,6 +41,18 @@ To run this project on your local machine:
 - flutter pub get
 - flutter run
 
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+- Fork the repo
+- Create a new branch: feature/your-feature-name
+- Make your changes
+- Push and create a Pull Request
+
+---
+
 ## 📂 Note Data Model
 
 ```dart
