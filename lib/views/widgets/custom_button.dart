@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 
+
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key, this.onTap,  this.isLoading = false });
   final void Function()? onTap;
@@ -19,7 +20,7 @@ class CustomButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
         ),
         child: Center(
-          child: isLoading? Container(
+          child: isLoading? SizedBox(
               height: 28,
               width: 28,
               child: CircularProgressIndicator(color: Colors.black,)) : Text(
