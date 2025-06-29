@@ -45,13 +45,24 @@ class NoteModel {
 
 ---
 
-## Getting Started
+## 🛠️ Built With
 
-Clone the repository and run the app:
-git clone https://github.com/a7med287/notes.git
-cd notes
-flutter pub get
-flutter run
+- [Flutter](https://flutter.dev)
+- [Dart](https://dart.dev)
+- [Hive](https://docs.hivedb.dev) (for local storage)
+- [Bloc/Cubit](https://bloclibrary.dev)
+
+---
+
+## 📂 Note Data Model
+
+```dart
+class NoteModel {
+  final String title;
+  final String content;
+  final int color;
+  final DateTime date;
+}
 
 ---
 
