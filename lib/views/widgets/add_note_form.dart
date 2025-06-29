@@ -4,6 +4,7 @@ import 'package:notes_app/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:notes_app/cubits/add_note_cubit/add_note_states.dart';
 import 'package:notes_app/models/note_model.dart';
 import 'package:intl/intl.dart';
+import 'colors_list.dart';
 import 'custom_button.dart';
 import 'custom_text_field.dart';
 
@@ -20,13 +21,12 @@ class _AddNoteFormState extends State<AddNoteForm> {
 
   String? title, subTitle;
 
-
   @override
   Widget build(BuildContext context) {
     DateTime dateTimeNow = DateTime.now();
-  //  String formattedTimeNow = "${dateTimeNow.year}-${dateTimeNow.month.toString().padLeft(2, '0')}-${dateTimeNow.day.toString().padLeft(2, '0')}";
+    //  String formattedTimeNow = "${dateTimeNow.year}-${dateTimeNow.month.toString().padLeft(2, '0')}-${dateTimeNow.day.toString().padLeft(2, '0')}";
 
-    var formatedDateNow =  DateFormat('dd-mm-yyyy').format(dateTimeNow);
+    var formatedDateNow = DateFormat('dd-mm-yyyy').format(dateTimeNow);
     return Form(
       key: formKey,
       autovalidateMode: autovalidateMode,
@@ -47,8 +47,10 @@ class _AddNoteFormState extends State<AddNoteForm> {
               subTitle = value;
             },
           ),
-          SizedBox(height: 34),
-          BlocBuilder<AddNoteCubit,AddNoteStates>(
+          SizedBox(height: 16),
+          ColorsList(),
+          SizedBox(height: 16),
+          BlocBuilder<AddNoteCubit, AddNoteStates>(
             builder: (BuildContext context, state) {
               return CustomButton(
                 isLoading: state is AddNoteLoading ? true : false,
@@ -58,7 +60,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     NoteModel note = NoteModel(
                       title: title!,
                       subTitle: subTitle!,
-                      date: formatedDateNow.toString() ,
+                      date: formatedDateNow.toString(),
                       color: Color(0xffc3c180).toARGB32(),
                     );
                     BlocProvider.of<AddNoteCubit>(context).addNote(note);
