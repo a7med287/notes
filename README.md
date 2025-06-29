@@ -45,9 +45,11 @@ class NoteModel {
 
 ---
 
-# Getting Started
+## 🚀 Getting Started
 
 Clone the repository and run the app:
+
+```bash
 git clone https://github.com/a7med287/notes.git
 cd notes
 flutter pub get
