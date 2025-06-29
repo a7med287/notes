@@ -45,16 +45,7 @@ class NoteModel {
 
 ---
 
-## 🛠️ Built With
-
-- [Flutter](https://flutter.dev)
-- [Dart](https://dart.dev)
-- [Hive](https://docs.hivedb.dev) (for local storage)
-- [Bloc/Cubit](https://bloclibrary.dev)
-
----
-
-## Getting Started
+# Getting Started
 
 Clone the repository and run the app:
 git clone https://github.com/a7med287/notes.git
@@ -64,7 +55,7 @@ flutter run
 
 ---
 
-## 🤝 Contributing
+# 🤝 Contributing
 
 Contributions are welcome!
 
@@ -78,7 +69,7 @@ Push and create a Pull Request
 
 ---
 
-## Contact
+# Contact
 
 Email: rezk7672@gmail.com
 LinkedIn: [Ahmed Rezk](https://www.linkedin.com/in/ahmed-rezk-966985322/)
