@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:notes_app/cubits/add_note_cubit/add_note_cubit.dart';
 
 class ColorsList extends StatefulWidget {
   const ColorsList({super.key});
@@ -9,13 +11,13 @@ class ColorsList extends StatefulWidget {
 
 class _ColorsListState extends State<ColorsList> {
   int? currentIndex = 0;
- List<Color> colors = [
-   Color(0xff075924),
-   Color(0xff497354),
-   Color(0xffA68A56),
-   Color(0xffBF7B54),
-   Color(0xffF2D7D0),
- ];
+  List<Color> colors = [
+    Color(0xff075924),
+    Color(0xff497354),
+    Color(0xffA68A56),
+    Color(0xffBF7B54),
+    Color(0xffF2D7D0),
+  ];
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -27,13 +29,15 @@ class _ColorsListState extends State<ColorsList> {
           return Padding(
             padding: const EdgeInsets.only(right: 8.0),
             child: GestureDetector(
-              onTap: (){
+              onTap: () {
                 currentIndex = index;
-                setState(() {
-
-                });
+                BlocProvider.of<AddNoteCubit>(context).color = colors[index];
+                setState(() {});
               },
-              child: CustomColorItem(isChecked: currentIndex == index, color: colors[index],),
+              child: CustomColorItem(
+                isChecked: currentIndex == index,
+                color: colors[index],
+              ),
             ),
           );
         },
@@ -43,10 +47,14 @@ class _ColorsListState extends State<ColorsList> {
 }
 
 class CustomColorItem extends StatelessWidget {
-  const CustomColorItem({super.key, required this.isChecked, required this.color});
+  const CustomColorItem({
+    super.key,
+    required this.isChecked,
+    required this.color,
+  });
 
   final bool isChecked;
-  final Color color ;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return isChecked
