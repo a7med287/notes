@@ -5,13 +5,6 @@ It allows users to add, edit, and delete notes, with local storage using **Hive*
 
 ---
 
-# 📝 Notes App
-
-A simple and fast mobile notes application built with **Flutter**.  
-It allows users to add, edit, and delete notes, with local storage using **Hive**, and state management via **Cubit (Bloc)**.
-
----
-
 ## 📸 Screenshots
 
 | Home Screen | Add Note | Edit Note |
@@ -49,7 +42,11 @@ class NoteModel {
   final int color;
   final DateTime date;
 }
+
+---
+
 ## Getting Started
+
 Clone the repository and run the app:
 git clone https://github.com/a7med287/notes.git
 cd notes
